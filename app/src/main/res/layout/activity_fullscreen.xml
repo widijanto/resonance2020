@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/yearParty"
+            android:layout_width="match_parent"
+            android:layout_height="257dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorAccent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/yearparty" />
+
+        <ImageButton
+            android:id="@+id/makeAWish"
+            android:layout_width="match_parent"
+            android:layout_height="404dp"
+            android:background="@color/colorAccent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/make_a_wish" />
+
+    </LinearLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>
